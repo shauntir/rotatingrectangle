@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Mobile Rotating Rectangle Demo App</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <h1 class="text-align-center">Mobile Rotating Rectangle Demo App</h1>
+        <div class="form-group padding-top-20">
+            <label for="numberGenerator" class="col-sm-4 control-label">Please select number of rectangles to generate: </label>
+            <div class="col-sm-4">
+                <select id="numberGeneratorSelect" class="form-control"></select>
+            </div>
+            <div class="col-sm-2">
+                <button id="generateButton" type="button" class="btn btn-success btn-block">Generate</button>
+            </div>
+        </div>
+
+        <div class="row padding-top-40">
+            <div class="alert alert-info " role="alert">Input Rectangles</div>
+        </div>
+        <div class="row text-align-center padding-top-40">
+            <div class="col-sm-12" id="inputCanvasContainer">
+                <canvas id="inputCanvas" width="500" height="200">
+                    Sorry, it seems that your browser/device does not support the canvas html 5 element needed to run the application.
+                </canvas>
+            </div>
+        </div>
+
+        <div class="row padding-top-40">
+            <div class="alert alert-success" role="alert">Output Rectangles</div>
+        </div>
+        <div class="row text-align-center padding-top-20">
+            <div class="col-sm-12" id="outputCanvasContainer">
+                <canvas id="outputCanvas" width="500" height="200">
+                    Sorry, it seems that your browser/device does not support the canvas html 5 element needed to run the application.
+                </canvas>
+            </div>
+        </div>
+
+    </div><!-- /.container -->
+
+</body>
+</html>
